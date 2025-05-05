@@ -216,6 +216,7 @@ class CustomFooter extends HTMLElement {
                   <li class="text-white mb-2 link-hover"><a class="text-white text-decoration-none link-hover fw-400 mb-2" href="index.html">  الصفحة الرئيسية  </a></li>
                   <li class="text-white mb-2 link-hover"><a class="text-white text-decoration-none link-hover fw-400 mb-2" href="about.html">  من نحن  </a></li>
                   <li class="text-white mb-2 link-hover"><a class="text-white text-decoration-none link-hover fw-400 mb-2" href="services.html"> خدماتنا  </a></li>
+                  <li class="text-white mb-2 link-hover"><a class="text-white text-decoration-none link-hover fw-400 mb-2" href="visas.html"> التأشيرات  </a></li>
                   <li class="text-white mb-2 link-hover"><a class="text-white text-decoration-none link-hover fw-400 mb-2" href="contact.html"> تواصل بنا </a></li>
                 </ul>
               </div>

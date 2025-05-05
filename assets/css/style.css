@@ -565,6 +565,11 @@ body.arabicVersion .whats-app {
   .offcanvas-body::-webkit-scrollbar {
     width: 8px;
   }
+  .flight-path {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
   .offcanvas-body::-webkit-scrollbar-track {
     background: white;
   }
