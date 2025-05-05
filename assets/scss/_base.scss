@@ -543,7 +543,7 @@ header {
 .cursor-pointer {
   cursor: pointer !important;
 }
-@media (min-width: 375px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .offcanvas-body::-webkit-scrollbar {
     width: 8px;
   }
@@ -553,7 +553,7 @@ header {
     margin: 0 auto;
     display: block;
   }
-  
+
   .offcanvas-body::-webkit-scrollbar-track {
     background: #ffff;
     // border-radius: 10px;
@@ -1094,7 +1094,7 @@ body.arabicVersion{
 }}
 .about-pg{
 .about-img{
-width: 120px; height: 300px;
+width: 100%; height: 300px;
 }}
 .about-card {
   transition: all 0.3s ease-in-out;
