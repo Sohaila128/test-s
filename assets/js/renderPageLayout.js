@@ -71,53 +71,65 @@ customElements.define('custom-header', CustomHeader);
 class MainHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-  <header class="w-100">
-  <nav class="navbar navbar-expand-lg py-1 bg-primary">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo Left -->
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/navbar-logo.svg" alt="logo" title="Company Logo">
-      </a>
+  <!-- Navbar/Header -->
+    <header  class=" w-100">
+      <nav class="navbar navbar-expand-lg py-1 bg-primary">
+        <div class="container d-flex align-items-lg-center justify-content-between">
+          <!-- Logo Left -->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/navbar-logo.png" alt="logo" title="Company Logo">
+          </a>
+    
+          <!-- Toggle for mobile -->
+          <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Offcanvas for all screens -->
+          <div class="offcanvas offcanvas-start  text-white border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header d-lg-none">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+    
+            <div class="offcanvas-body w-100">
+              <!-- Center Nav Links -->
+              <div class="navbar-nav mx-lg-auto d-flex gap-md-3">
+                <a class="nav-link text-white fw-500 nav-hover-link" href="index.html">  الصفحة الرئيسية  </a>
+                <a class="nav-link text-white fw-500 nav-hover-link" href="about.html"> من نحن  </a>
+                <a class="nav-link text-white fw-500 nav-hover-link" href="services.html"> خدماتنا  </a>
+                <a class="nav-link text-white fw-500 nav-hover-link" href="visas.html"> التأشيرات  </a>
+                <a class="nav-link text-white fw-500 nav-hover-link" href="contact.html"> تواصل بنا  </a>
+                  <div class="nav-link  fw-400 nav-hover-link fs-sm d-lg-none d-flex">
+            <div class="LanguageMenu" role="button" onclick="changeLanguage()">
+              <span class="fs-arbic lan LanguageText" id="LanguageText">En</span>
+             <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                   <path d="M3 12H8M3 12C3 16.9706 7.02944 21 12 21M3 12C3 7.02944 7.02944 3 12 3M8 12H16M8 12C8 16.9706 9.79086 21 12 21M8 12C8 7.02944 9.79086 3 12 3M16 12H21M16 12C16 7.02944 14.2091 3 12 3M16 12C16 16.9706 14.2091 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12C21 16.9706 16.9706 21 12 21" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                 </svg>
+              </span>
+           </div>
 
-      <!-- Toggle for mobile (d-flex with logo) -->
-      <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Offcanvas for all screens -->
-      <div class="offcanvas offcanvas-start text-white border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header d-lg-none">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        
-        <div class="offcanvas-body w-100">
-          <!-- Center Nav Links -->
-          <div class="navbar-nav mx-lg-3 d-flex gap-md-3">
-            <a class="nav-link text-white fw-500 nav-hover-link" href="index.html">الصفحة الرئيسية</a>
-            <a class="nav-link text-white fw-500 nav-hover-link" href="about.html">من نحن</a>
-            <a class="nav-link text-white fw-500 nav-hover-link" href="services.html">خدماتنا</a>
-            <a class="nav-link text-white fw-500 nav-hover-link" href="visas.html">التأشيرات</a>
-            <a class="nav-link text-white fw-500 nav-hover-link" href="contact.html">تواصل بنا</a>
+      </div>
+              </div>
+    
+              <!-- Language and Button (Right) -->
+            </div>
+          </div>
+          <div class="d-flex gap-3 align-items-center d-none d-lg-flex mt-3 mt-lg-0">
+            <div class="text-white LanguageMenu" role="button">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                  <path d="M3 12H8M3 12C3 16.97 7.03 21 12 21M3 12C3 7.03 7.03 3 12 3M8 12H16M8 12C8 16.97 9.79 21 12 21M8 12C8 7.03 9.79 3 12 3M16 12H21M16 12C16 7.03 14.21 3 12 3M16 12C16 16.97 14.21 21 12 21M21 12C21 7.03 16.97 3 12 3M21 12C21 16.97 16.97 21 12 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="text-white fs-arbic lan LanguageText" id="LanguageText">english</span>
+            </div>
+            
           </div>
         </div>
-      </div>
-
-      <!-- Language and Button (Right) -->
-      <div class="d-flex gap-3 align-items-center d-none d-lg-flex mt-3 mt-lg-0">
-        <div class="text-white LanguageMenu" role="button">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-              <path d="M3 12H8M3 12C3 16.97 7.03 21 12 21M3 12C3 7.03 7.03 3 12 3M8 12H16M8 12C8 16.97 9.79 21 12 21M8 12C8 7.03 9.79 3 12 3M16 12H21M16 12C16 7.03 14.21 3 12 3M16 12C16 16.97 14.21 21 12 21M21 12C21 7.03 16.97 3 12 3M21 12C21 16.97 16.97 21 12 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span class="text-white fs-arbic lan LanguageText" id="LanguageText">english</span>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
-
+      </nav>
+    </header>
     `;
   }
 }

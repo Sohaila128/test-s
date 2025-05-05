@@ -1158,3 +1158,8 @@ body.arabicVersion .phone {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .plan-img {
+    width: 90%;
+  }
+}
