@@ -571,9 +571,6 @@ body.arabicVersion .whats-app {
   .offcanvas-body::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
   }
-  .navbar-brand {
-    width: 380px !important;
-  }
   .offcanvas {
     padding: 0;
   }

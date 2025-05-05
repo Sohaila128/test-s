@@ -74,15 +74,13 @@ class MainHeader extends HTMLElement {
   <header class="w-100">
   <nav class="navbar navbar-expand-lg py-1 bg-primary">
     <div class="container d-flex align-items-center justify-content-between">
-    <div>
-    </div>
       <!-- Logo Left -->
       <a class="navbar-brand" href="index.html">
-        <img src="assets/images/navbar-logo.png" alt="logo" title="Company Logo">
+        <img src="assets/images/navbar-logo.svg" alt="logo" title="Company Logo">
       </a>
 
       <!-- Toggle for mobile (d-flex with logo) -->
-      <button class="navbar-toggler border-0 d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -95,7 +93,7 @@ class MainHeader extends HTMLElement {
         
         <div class="offcanvas-body w-100">
           <!-- Center Nav Links -->
-          <div class="navbar-nav mx-lg-auto d-flex gap-md-3">
+          <div class="navbar-nav mx-lg-3 d-flex gap-md-3">
             <a class="nav-link text-white fw-500 nav-hover-link" href="index.html">الصفحة الرئيسية</a>
             <a class="nav-link text-white fw-500 nav-hover-link" href="about.html">من نحن</a>
             <a class="nav-link text-white fw-500 nav-hover-link" href="services.html">خدماتنا</a>
