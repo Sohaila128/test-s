@@ -4,11 +4,11 @@ class CustomHeader extends HTMLElement {
     this.innerHTML = `
   <!-- Navbar/Header -->
     <header  class="position-absolute w-100" style="z-index: 10;">
-      <nav class="navbar navbar-expand-lg py-1 bg-transparent mt-md-1">
+      <nav class="navbar navbar-expand-lg py-2 bg-transparent mt-md-1">
         <div class="container d-flex align-items-lg-center justify-content-between">
           <!-- Logo Left -->
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/navbar-logo.png" alt="logo" title="Company Logo">
+            <img src="assets/images/navbar-logo.svg" alt="logo" title="Company Logo">
           </a>
     
           <!-- Toggle for mobile -->
@@ -73,11 +73,11 @@ class MainHeader extends HTMLElement {
     this.innerHTML = `
   <!-- Navbar/Header -->
     <header  class=" w-100">
-      <nav class="navbar navbar-expand-lg py-1 bg-primary">
+      <nav class="navbar navbar-expand-lg py-2 bg-primary">
         <div class="container d-flex align-items-lg-center justify-content-between">
           <!-- Logo Left -->
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/navbar-logo.png" alt="logo" title="Company Logo">
+          <a class="navbar-brand mt-2" href="index.html">
+            <img src="assets/images/navbar-logo.svg" alt="logo" title="Company Logo">
           </a>
     
           <!-- Toggle for mobile -->
