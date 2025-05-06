@@ -382,9 +382,35 @@ textarea {
   }
 }
 .iti {
-  direction: rtl !important;
+  // direction: rtl;
   width: -webkit-fill-available !important;
 }
+
+body:not(.arabicVersion) .iti--allow-dropdown .iti__flag-container,
+body:not(.arabicVersion) .iti--show-selected-dial-code .iti__flag-container {
+  right: auto !important;
+  left: 0 !important;
+}
+body:not(.arabicVersion) .iti__arrow {
+  margin-right: 5px;
+  margin-left: 6px;
+}
+
+body:not(.arabicVersion) .iti {
+  direction: ltr !important;
+  width: -webkit-fill-available !important;
+}
+
+body:not(.arabicVersion) .iti input {
+  direction: ltr !important; 
+  text-align: left !important; 
+  padding-left: 50px !important;
+}
+body:not(.arabicVersion) .iti input.iti__search-input {
+  padding-left: 10px !important;
+}
+
+
 .iti__country-name {
   margin-right: 8px;
   color: var(--dark-color) !important;
