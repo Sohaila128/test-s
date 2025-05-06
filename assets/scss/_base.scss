@@ -57,6 +57,7 @@ body {
   --heading-color: #292929;
   --light-color: #F1F5FD;
   --light-color-two: #ede4d2;
+  --light-color-three: #DFEAFA;
   --light-border: #ebebeb;
   --border-dark-color: #656565;
   --bg-card-color: #eafaf2;
@@ -138,6 +139,9 @@ body {
 }
 .bg-light-two {
   background-color: var(--light-color-two) !important;
+}
+.bg-light-three {
+  background-color: var(--light-color-three) !important;
 }
 .bg-card {
   background-color: var(--bg-card-color) !important;
@@ -1165,3 +1169,135 @@ body.arabicVersion .phone {
 }
 
 
+
+.testimonials-section {
+  background-color: var(--light-color); 
+  .testimonial-card {
+    transition: 0.3s ease;
+    p {
+      color: #555;
+    }
+  }
+
+  
+}
+
+.quote-icon {
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  right: 25px;
+  background-color: #3451C1; 
+  font-size: 20px;
+}
+
+body.arabicVersion .quote-icon {
+  left: 25px !important; 
+  right: auto; 
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary-color-hover);
+  margin: 0 10px;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.slick-dots button {
+  display: block;
+  width: 4px;
+  height: 12px;
+  margin-inline: 3px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-color-hover);
+  text-indent: -9999px;
+}
+.btn-slider{
+  background: var(--bg-gradient);
+}
+.btn-slider:hover{
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4) !important;
+  text-decoration: none !important;
+  color: #FFF;
+
+}
+.slider li {
+  color: white;
+  border-right: 2px solid #fff;
+  text-align: center;
+}
+
+.btn-slider{
+  padding: 10px 40px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0px;
+    border-color: transparent !important;
+    box-shadow: 0px 0px 0px 0px transparent!important;
+
+}
+.city-gallery{
+  li.slick-active button {
+    background-color: #293977;
+  }
+  .slick-dots button {
+  background-color: #293977;
+  
+}
+}
+li.slick-active button {
+  background-color: var(--primary-color-hover);
+  width: 56.75px;
+  height: 12px;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.slick-dots button {
+  transition: all 0.3s ease-in-out; 
+}
+
+.testimonial-card {
+  height: 280px !important;
+  display: flex;
+  flex-direction: column;
+  .card-body {
+    flex-grow: 1 !important;
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+  }
+}
+
+.slick-slider {
+  .slick-track {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .slick-slide {
+    padding-inline: 10px; 
+  }
+}
+
+
+.city-gallery{
+  h5{
+    color: #262626 !important;
+  }
+}
+// .city-gallery .slick-dots li:nth-child(n+5) {
+//   display: none !important;
+// }

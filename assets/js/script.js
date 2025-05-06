@@ -114,114 +114,118 @@ function reinitializeSliders() {
   const isRTL = localStorage.getItem('Language') === "العربية";
 
   // Destroy existing sliders if initialized
-  if ($('.brands-slider').hasClass('slick-initialized')) {
-    $('.brands-slider').slick('unslick');
+  if ($('.testimonial-slide').hasClass('slick-initialized')) {
+    $('.testimonial-slide').slick('unslick');
   }
-  if ($('.services-slider').hasClass('slick-initialized')) {
-    $('.services-slider').slick('unslick');
+  if ($('.city-gallery').hasClass('slick-initialized')) {
+    $('.city-gallery').slick('unslick');
   }
-  if ($('.gallery-slider').hasClass('slick-initialized')) {
-    $('.gallery-slider').slick('unslick');
-  }
-  if ($('.clients-slider').hasClass('slick-initialized')) {
-    $('.clients-slider').slick('unslick');
-  }
+  const MAX_VISIBLE_DOTS = 4;
 
-  // Reinitialize brands slider
-  $('.brands-slider').slick({
-    centerMode: true,
-    centerPadding: '0',
-    slidesToShow: 5,
-    focusOnSelect: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true,
-    prevArrow: '.Categories-slider-nav .prev',
-    nextArrow: '.Categories-slider-nav .next',
-    rtl: isRTL,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+// --- testimonial-slider dots handling ---
+$('.testimonial-slide').on('init reInit afterChange', function(event, slick, currentSlide){
+    const $dots = $('.testimonial-dots li');
+    const totalDots = $dots.length;
 
-  // Reinitialize services slider
-  $('.services-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    rtl: isRTL,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-  // Reinitialize clients-slider
-  $('.clients-slider').slick({
-    slidesToShow: 3.5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    rtl: isRTL,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+    if (totalDots <= MAX_VISIBLE_DOTS) {
+        $dots.show(); // لو عددهم ٤ أو أقل نعرضهم كلهم
+        return;
+    }
 
-  // Reinitialize gallery slider
-  $('.gallery-slider').slick({
-    slidesToShow: 3.5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    rtl: isRTL,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+    let start = Math.max(0, slick.currentSlide - Math.floor(MAX_VISIBLE_DOTS / 2));
+    if (start + MAX_VISIBLE_DOTS > totalDots) {
+        start = totalDots - MAX_VISIBLE_DOTS;
+    }
+    start = Math.max(start, 0);
+
+    $dots.hide().slice(start, start + MAX_VISIBLE_DOTS).show();
+});
+
+// --- city-gallery dots handling ---
+$('.city-gallery').on('init reInit afterChange', function(event, slick, currentSlide){
+    const $dots = $('.city-gallery .slick-dots li');
+    const totalDots = $dots.length;
+
+    if (totalDots <= MAX_VISIBLE_DOTS) {
+        $dots.show(); 
+        return;
+    }
+
+    let start = Math.max(0, slick.currentSlide - Math.floor(MAX_VISIBLE_DOTS / 2));
+    if (start + MAX_VISIBLE_DOTS > totalDots) {
+        start = totalDots - MAX_VISIBLE_DOTS;
+    }
+    start = Math.max(start, 0);
+
+    $dots.hide().slice(start, start + MAX_VISIBLE_DOTS).show();
+});
+
+  $('.testimonial-slide').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      dots: true,
+      rtl: isRTL,
+      appendDots: $('.testimonial-dots'),
+      prevArrow: $('.testimonial-prev'),
+      nextArrow: $('.testimonial-next'),
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 2
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1,
+              }
+          }
+      ]
   });
+  
+
+$('.city-gallery').slick({
+  dots: true,
+  infinite: true,
+  speed: 800,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  arrows: true,
+  prevArrow: '.Categories-slider-nav .prev', 
+  nextArrow: '.Categories-slider-nav .next', 
+  rtl: document.body.style.direction === "rtl", 
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 8,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+      }
+    },
+  ]
+});
+  
+
 }
 
 

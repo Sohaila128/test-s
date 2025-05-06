@@ -196,7 +196,10 @@ class CustomFooter extends HTMLElement {
         <div class="row align-items-center mb-5">
           <div class="col-md-12 col-lg-5">
             <a href="index.html">
-            <div class="m-0 p-0">
+            <div class="mb-3 d-block d-md-none">
+              <img src="assets/images/logo-white.svg" class="img-fluid" alt="" width="">
+            </div>
+            <div class="m-0 p-0 d-none d-md-block">
               <img src="assets/images/logo.png" class="img-fluid" alt="" width="">
             </div>
             </a>
