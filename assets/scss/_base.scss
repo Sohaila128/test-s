@@ -212,25 +212,32 @@ ol {
   color: white !important;
   background-color: var(--primary-color-hover) !important;
   border-color: var(--primary-color-hover) !important;
-  transition: 0.5s linear !important;
+  transition: all 0.5s linear !important;
+  font-weight: 700;
+  display: inline-block;
 
   &:hover {
-    color: white !important;
-    background-color: var(--primary-color-hover) !important;
-    border-color: var(--primary-color-hover) !important;
-    box-shadow: 0 0 10px var(--primary-color-hover);
+    color: var(--primary-color) !important;
+    background-color: var(--light-color-three) !important;
+    border-color: var(--light-color-three) !important;
+    font-weight: 700;
+    transform: translateY(-5px) !important; 
   }
 }
+
+
 .btn-primary-two {
   color: white !important;
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
   transition: 0.5s linear !important;
+  font-weight: 700;
+  display: inline-block;
 
   &:hover {
     color: var(--primary-color) !important;
-    background-color: transparent !important;
-    border-color: var(--primary-color) !important;
+    background-color: var(--light-color-three) !important;
+    border-color: var(--light-color-three) !important;
   }
 }
 
@@ -411,6 +418,7 @@ body:not(.arabicVersion) .iti input.iti__search-input {
 }
 
 
+
 .iti__country-name {
   margin-right: 8px;
   color: var(--dark-color) !important;
@@ -461,6 +469,10 @@ body.arabicVersion .LanguageMenu svg {
 body.arabicVersion .arrow-ar {
   transform: scaleX(-1) !important;
 }
+body:not(.arabicVersion) .arrow-ar-dir {
+  transform: scaleX(-1) !important;
+
+}
 body.arabicVersion .plan-img {
   transform: scaleX(1) !important;
 }
@@ -497,6 +509,9 @@ header {
   &:hover {
     background-color: white !important;
     color: var(--primary-color) !important;
+    svg path {
+      stroke: var(--primary-color);
+    }    
     transform: translateY(-5px);
   }
 }
@@ -1327,3 +1342,9 @@ li.slick-active button {
 // .city-gallery .slick-dots li:nth-child(n+5) {
 //   display: none !important;
 // }
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

@@ -128,7 +128,7 @@ $('.testimonial-slide').on('init reInit afterChange', function(event, slick, cur
     const totalDots = $dots.length;
 
     if (totalDots <= MAX_VISIBLE_DOTS) {
-        $dots.show(); // لو عددهم ٤ أو أقل نعرضهم كلهم
+        $dots.show(); 
         return;
     }
 
@@ -203,7 +203,7 @@ $('.city-gallery').slick({
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 8,
+        slidesToShow: 6,
         slidesToScroll: 1,
       }
     },

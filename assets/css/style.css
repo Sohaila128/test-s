@@ -243,13 +243,16 @@ ol {
   color: white !important;
   background-color: var(--primary-color-hover) !important;
   border-color: var(--primary-color-hover) !important;
-  transition: 0.5s linear !important;
+  transition: all 0.5s linear !important;
+  font-weight: 700;
+  display: inline-block;
 }
 .btn-primary:hover {
-  color: white !important;
-  background-color: var(--primary-color-hover) !important;
-  border-color: var(--primary-color-hover) !important;
-  box-shadow: 0 0 10px var(--primary-color-hover);
+  color: var(--primary-color) !important;
+  background-color: var(--light-color-three) !important;
+  border-color: var(--light-color-three) !important;
+  font-weight: 700;
+  transform: translateY(-5px) !important;
 }
 
 .btn-primary-two {
@@ -257,11 +260,13 @@ ol {
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
   transition: 0.5s linear !important;
+  font-weight: 700;
+  display: inline-block;
 }
 .btn-primary-two:hover {
   color: var(--primary-color) !important;
-  background-color: transparent !important;
-  border-color: var(--primary-color) !important;
+  background-color: var(--light-color-three) !important;
+  border-color: var(--light-color-three) !important;
 }
 
 .btn-dark {
@@ -486,6 +491,10 @@ body.arabicVersion .arrow-ar {
   transform: scaleX(-1) !important;
 }
 
+body:not(.arabicVersion) .arrow-ar-dir {
+  transform: scaleX(-1) !important;
+}
+
 body.arabicVersion .plan-img {
   transform: scaleX(1) !important;
 }
@@ -520,6 +529,9 @@ body.arabicVersion .rotate-img {
   background-color: white !important;
   color: var(--primary-color) !important;
   transform: translateY(-5px);
+}
+.social-icons:hover svg path {
+  stroke: var(--primary-color);
 }
 
 .back-to-top {
@@ -1294,4 +1306,10 @@ li.slick-active button {
 
 .city-gallery h5 {
   color: #262626 !important;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }

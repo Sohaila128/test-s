@@ -8,7 +8,7 @@ class CustomHeader extends HTMLElement {
         <div class="container d-flex align-items-lg-center justify-content-between">
           <!-- Logo Left -->
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/navbar-logo.svg" alt="logo" title="Company Logo">
+            <img src="assets/images/navbar-logo.svg" alt="logo" title="Safir Logo">
           </a>
     
           <!-- Toggle for mobile -->
@@ -77,7 +77,7 @@ class MainHeader extends HTMLElement {
         <div class="container d-flex align-items-lg-center justify-content-between">
           <!-- Logo Left -->
           <a class="navbar-brand mt-2" href="index.html">
-            <img src="assets/images/navbar-logo.svg" alt="logo" title="Company Logo">
+            <img src="assets/images/navbar-logo.svg" alt="logo" title="Safir Logo">
           </a>
     
           <!-- Toggle for mobile -->
@@ -251,22 +251,44 @@ class CustomFooter extends HTMLElement {
                     <ul class="list-unstyled mb-0 mt-0 m-0 p-0 gap-3 mt-4 d-flex flex-wrap">
                       <li>
                         <a href="" class="text-decoration-none" target="_blank">
-                          <i class="fa-brands fa-snapchat text-white fs-5 border social-icons rounded-circle rounded-2 link-primary"></i>
+                        <span class="text-white fs-5 border social-icons rounded-circle rounded-2 link-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M7 10V17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.00801 7L6.99902 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                      </svg></span>
                         </a>
                       </li>
                       <li>
                         <a href="" class="text-decoration-none" target="_blank">
-                          <i class="fa-brands fa-facebook-f text-white fs-5 border social-icons rounded-circle rounded-2 link-primary"></i>
+                            <span class="text-white fs-5 border social-icons rounded-circle rounded-2 link-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M17 8.75C17.4142 8.75 17.75 8.41421 17.75 8C17.75 7.58579 17.4142 7.25 17 7.25V8.75ZM16 8V8.75V8ZM11.25 21.5C11.25 21.9142 11.5858 22.25 12 22.25C12.4142 22.25 12.75 21.9142 12.75 21.5H11.25ZM10 13.25C9.58579 13.25 9.25 13.5858 9.25 14C9.25 14.4142 9.58579 14.75 10 14.75V13.25ZM15 14.75C15.4142 14.75 15.75 14.4142 15.75 14C15.75 13.5858 15.4142 13.25 15 13.25V14.75ZM17 8V7.25H16V8V8.75H17V8ZM12 12H11.25V21.5H12H12.75V12H12ZM16 8V7.25C15.0784 7.25 14.3117 7.24841 13.7055 7.32991C13.0777 7.41432 12.5109 7.59999 12.0555 8.05546L12.5858 8.58579L13.1161 9.11612C13.2464 8.9858 13.4439 8.87858 13.9054 8.81654C14.3884 8.75159 15.036 8.75 16 8.75V8ZM12 12H12.75C12.75 11.036 12.7516 10.3884 12.8165 9.90539C12.8786 9.44393 12.9858 9.24643 13.1161 9.11612L12.5858 8.58579L12.0555 8.05546C11.6 8.51093 11.4143 9.07773 11.3299 9.70552C11.2484 10.3117 11.25 11.0784 11.25 12H12ZM10 14V14.75H15V14V13.25H10V14Z" fill="white"/>
+                        </svg>
+                      </span>
                         </a>
                       </li>
                       <li>
                         <a href="" class="text-decoration-none" target="_blank">
-                          <i class="fa-brands fa-instagram text-white fs-5 border social-icons rounded-circle rounded-2 link-primary"></i>
+                          <span class="text-white fs-5 border social-icons rounded-circle rounded-2 link-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                  <path d="M1.5 11C1.5 6.52166 1.5 4.28249 2.89124 2.89124C4.28249 1.5 6.52166 1.5 11 1.5C15.4783 1.5 17.7175 1.5 19.1088 2.89124C20.5 4.28249 20.5 6.52166 20.5 11C20.5 15.4783 20.5 17.7175 19.1088 19.1088C17.7175 20.5 15.4783 20.5 11 20.5C6.52166 20.5 4.28249 20.5 2.89124 19.1088C1.5 17.7175 1.5 15.4783 1.5 11Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                                  <path d="M15.5 11C15.5 13.4853 13.4853 15.5 11 15.5C8.51472 15.5 6.5 13.4853 6.5 11C6.5 8.51472 8.51472 6.5 11 6.5C13.4853 6.5 15.5 8.51472 15.5 11Z" stroke="white" stroke-width="1.5"/>
+                                  <path d="M16.5078 5.5L16.4988 5.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                      </span>
                         </a>
                       </li>
                       <li>
                         <a href="" class="text-decoration-none" target="_blank">
-                          <i class="fa-brands fa-youtube text-white fs-5 border social-icons rounded-circle rounded-2 link-primary"></i>
+                            <span class="text-white fs-5 border social-icons rounded-circle rounded-2 link-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M2.50011 12C2.50011 7.52166 2.50011 5.28249 3.89135 3.89124C5.28259 2.5 7.52176 2.5 12.0001 2.5C16.4784 2.5 18.7176 2.5 20.1089 3.89124C21.5001 5.28249 21.5001 7.52166 21.5001 12C21.5001 16.4783 21.5001 18.7175 20.1089 20.1088C18.7176 21.5 16.4784 21.5 12.0001 21.5C7.52176 21.5 5.28259 21.5 3.89135 20.1088C2.50011 18.7175 2.50011 16.4783 2.50011 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.00011 17L11.1937 12.8065M17.0001 7L12.8066 11.1935M12.8066 11.1935L9.77788 7H7.00011L11.1937 12.8065M12.8066 11.1935L17.0001 17H14.2223L11.1937 12.8065" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                      </span>
                         </a>
                       </li>
                       
